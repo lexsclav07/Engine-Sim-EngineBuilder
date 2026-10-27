@@ -1,0 +1,314 @@
+{
+  "engine": {
+    "name": "Mercedes A180 (max NA tune)",
+    "redline_rpm": 8200.0,
+    "starter_torque_lbft": 120.0,
+    "starter_speed_rpm": 300.0,
+    "dyno_min_rpm": 1000.0,
+    "dyno_max_rpm": 8200.0,
+    "dyno_hold_step_rpm": 250.0,
+    "throttle_gamma": 2.0,
+    "simulation_frequency": 20000,
+    "max_sle_solver_steps": 128,
+    "fluid_simulation_steps": 8,
+    "convolution": 1.0,
+    "hf_gain": 0.01,
+    "jitter": 0.45,
+    "noise": 1.0,
+    "heat_transfer_coefficient": 100.0,
+    "block_temperature_c": 90.0
+  },
+  "fuel": {
+    "name": "Gasoline (95 RON)",
+    "molecular_mass_g": 100.0,
+    "energy_density_kj_g": 48.1,
+    "density_kg_l": 0.755,
+    "molecular_afr": 12.5,
+    "max_burning_efficiency": 1.0,
+    "burning_efficiency_randomness": 0.3,
+    "low_efficiency_attenuation": 0.6,
+    "max_turbulence_effect": 5.5,
+    "max_dilution_effect": 1000.0,
+    "flame_speed_multiplier": 1.28
+  },
+  "geometry": {
+    "bore_mm": 83.0,
+    "stroke_mm": 73.7,
+    "rod_length_mm": 136.0,
+    "rod_mass_g": 340.0,
+    "compression_height_mm": 28.0,
+    "deck_clearance_mm": 0.0,
+    "piston_mass_g": 230.0,
+    "wrist_pin_position_mm": 0.0,
+    "blowby": 0.002
+  },
+  "crank": {
+    "crank_mass_g": 12000.0,
+    "flywheel_mass_g": 9000.0,
+    "flywheel_radius_mm": 150.0,
+    "extra_moment": 0.0,
+    "friction_torque_nm": 4.5,
+    "manual_moment": true,
+    "moment_of_inertia": 0.055
+  },
+  "layout": {
+    "banks": [
+      {
+        "angle_deg": 0.0,
+        "cylinders": 4,
+        "flip": "auto",
+        "position_x_mm": 0.0,
+        "position_y_mm": 0.0,
+        "display_depth": 0.5
+      }
+    ],
+    "numbering": "sequential",
+    "firing_order": "1 3 4 2",
+    "crank_mode": "auto_even"
+  },
+  "cylinders": [
+    {
+      "journal_angle_deg": 0.0,
+      "primary_length_in": 0.0,
+      "sound_attenuation": 1.0,
+      "blowby_scale": 1.0
+    },
+    {
+      "journal_angle_deg": 180.0,
+      "primary_length_in": 0.0,
+      "sound_attenuation": 0.95,
+      "blowby_scale": 1.0
+    },
+    {
+      "journal_angle_deg": 180.0,
+      "primary_length_in": 0.0,
+      "sound_attenuation": 0.97,
+      "blowby_scale": 1.0
+    },
+    {
+      "journal_angle_deg": 0.0,
+      "primary_length_in": 0.0,
+      "sound_attenuation": 1.0,
+      "blowby_scale": 1.0
+    }
+  ],
+  "head": {
+    "chamber_volume_cc": 33.2,
+    "intake_runner_volume_cc": 130.0,
+    "intake_runner_area_cm2": 24.0,
+    "exhaust_runner_volume_cc": 45.0,
+    "exhaust_runner_area_cm2": 15.0,
+    "lift_step_thou": 50.0,
+    "flow_scale": 1.25,
+    "intake_flow": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        50.0,
+        54.0
+      ],
+      [
+        100.0,
+        95.9
+      ],
+      [
+        150.0,
+        145.3
+      ],
+      [
+        200.0,
+        199.3
+      ],
+      [
+        250.0,
+        231.9
+      ],
+      [
+        300.0,
+        249.6
+      ],
+      [
+        350.0,
+        260.8
+      ],
+      [
+        400.0,
+        260.8
+      ],
+      [
+        450.0,
+        261.7
+      ],
+      [
+        500.0,
+        261.7
+      ]
+    ],
+    "exhaust_flow": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        50.0,
+        34.5
+      ],
+      [
+        100.0,
+        67.1
+      ],
+      [
+        150.0,
+        105.3
+      ],
+      [
+        200.0,
+        149.0
+      ],
+      [
+        250.0,
+        182.6
+      ],
+      [
+        300.0,
+        206.8
+      ],
+      [
+        350.0,
+        218.9
+      ],
+      [
+        400.0,
+        228.2
+      ],
+      [
+        450.0,
+        229.1
+      ],
+      [
+        500.0,
+        229.1
+      ]
+    ]
+  },
+  "cam": {
+    "intake_duration_deg": 258.0,
+    "intake_lift_mm": 11.0,
+    "intake_gamma": 1.1,
+    "exhaust_duration_deg": 254.0,
+    "exhaust_lift_mm": 10.5,
+    "exhaust_gamma": 1.1,
+    "intake_center_deg": 104.0,
+    "exhaust_center_deg": 106.0,
+    "advance_deg": 0.0,
+    "base_radius_mm": 17.0,
+    "steps": 100
+  },
+  "intake": {
+    "plenum_volume_cc": 800.0,
+    "plenum_area_cm2": 15.0,
+    "intake_flow_cfm": 900.0,
+    "runner_flow_cfm": 300.0,
+    "runner_length_in": 9.0,
+    "idle_flow_cfm": 0.0,
+    "idle_throttle_plate_position": 0.9972,
+    "throttle_gamma": 2.0,
+    "velocity_decay": 0.5,
+    "lambda": 1.0
+  },
+  "exhaust": {
+    "mode": "shared",
+    "outlet_flow_cfm": 1000.0,
+    "primary_tube_length_in": 32.0,
+    "primary_flow_cfm": 400.0,
+    "length_in": 40.0,
+    "collector_area_cm2": 25.0,
+    "velocity_decay": 1.0,
+    "audio_volume": 0.372,
+    "impulse_response": "minimal_muffling_02",
+    "backflow_atmospheric_mixing": 0.0
+  },
+  "ignition": {
+    "rev_limit_rpm": 8500.0,
+    "limiter_duration_s": 0.06,
+    "timing": [
+      [
+        0.0,
+        16.0
+      ],
+      [
+        1000.0,
+        16.0
+      ],
+      [
+        2000.0,
+        24.0
+      ],
+      [
+        3000.0,
+        30.0
+      ],
+      [
+        4000.0,
+        34.0
+      ],
+      [
+        5000.0,
+        36.0
+      ],
+      [
+        6000.0,
+        38.0
+      ],
+      [
+        8000.0,
+        38.0
+      ],
+      [
+        9000.0,
+        38.0
+      ]
+    ]
+  },
+  "vehicle": {
+    "mass_kg": 1470.0,
+    "drag_coefficient": 0.3,
+    "cross_sectional_area_m2": 2.2,
+    "diff_ratio": 3.47,
+    "tire_radius_in": 12.45,
+    "rolling_resistance_n": 170.0,
+    "stiffness_lbft_deg": 50.0,
+    "damping": 1.0,
+    "max_flex_deg": 30.0,
+    "limit_flex": true,
+    "simulate_flex": false,
+    "max_brake_force_n": 9000.0,
+    "coeff_static_friction": 0.9,
+    "coeff_dynamic_friction": 0.8,
+    "wheel_base_in": 106.3,
+    "track_in": 61.0,
+    "max_brake_torque_lbft": 600.0,
+    "center_of_mass_in": 21.0,
+    "weight_transfer_bias": 1.0,
+    "vehicle_asset_file": ""
+  },
+  "transmission": {
+    "max_clutch_torque_lbft": 400.0,
+    "max_clutch_flex_deg": 5.0,
+    "limit_clutch_flex": true,
+    "clutch_stiffness_lbft_deg": 50.0,
+    "clutch_damping": 1.0,
+    "simulate_flex": false,
+    "gears": [
+      3.86,
+      2.43,
+      1.48,
+      1.05,
+      0.84,
+      0.68,
+      0.58
+    ]
+  }
+}
